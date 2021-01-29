@@ -1,0 +1,159 @@
+/* || Typography styles */
+
+html {
+    font-size: 100%;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Typography scale
+
+.fs--h1 {
+    font-size: 2.625rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.2;
+
+    @include bp-l {
+        font-size: 3.125rem;
+        line-height: 4rem;
+        letter-spacing: -0.4;
+    }
+
+    @include bp-xxl {
+        font-size: 3.75rem;
+        line-height: 4.875rem;
+        letter-spacing: -0.5;
+    }
+}
+
+.fs--h2 {
+    font-size: 2.1875rem;
+    line-height: 3rem;
+    letter-spacing: -0.1;
+
+    @include bp-l {
+        font-size: 2.625rem;
+        line-height: 3.5rem;
+        letter-spacing: -0.2;
+    }
+
+    @include bp-xxl {
+        font-size: 3.125rem;
+        line-height: 4rem;
+        letter-spacing: -0.4;
+    }
+}
+
+.fs--h3 {
+    font-size: 1.8125rem;
+    line-height: 2.5rem;
+
+    @include bp-l {
+        font-size: 2.1875rem;
+        line-height: 3rem;
+        letter-spacing: -0.1;
+    }
+
+    @include bp-xxl {
+        font-size: 2.625rem;
+        line-height: 3.5rem;
+        letter-spacing: -0.2;
+    }
+}
+
+.fs--h4 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @include bp-l {
+        font-size: 1.8125rem;
+        line-height: 2.5rem;
+    }
+
+    @include bp-xxl {
+        font-size: 2.1875rem;
+        line-height: 3rem;
+        letter-spacing: -0.1;
+    }
+}
+
+.fs--h5 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+
+    @include bp-l {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    @include bp-xxl {
+        font-size: 1.8125rem;
+        line-height: 2.5rem;
+    }
+}
+
+.fs--h6 {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+
+    @include bp-l {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    @include bp-xxl {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+p, .fs--m {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+
+    @include bp-l {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    @include bp-xxl {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+}
+
+.fs--s {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-l {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+
+    @include bp-xxl {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+}
+
+.fs--xs {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}
+
+// Typography styles
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 600;
+}
