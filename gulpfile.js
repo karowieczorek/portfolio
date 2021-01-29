@@ -15,7 +15,7 @@ gulp.task('html', function() {
         ext: ".css",
     })
     )
-    .pipe(gulp.dest('site/styles/'));
+    .pipe(gulp.dest('site/assets/styles/'));
 });
 
 gulp.task('default', gulp.parallel('html', 'styles'));
