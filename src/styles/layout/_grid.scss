@@ -1,0 +1,10 @@
+.grid--footer {
+
+    @include bp-xl {
+        display: grid;
+        display: -ms-grid;
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+}

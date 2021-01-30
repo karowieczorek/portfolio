@@ -1,6 +1,16 @@
-/* || Import BASE styles */
+/* || Import Base styles */
 
 @import 'base/base';
 @import 'base/breakpoints';
 @import 'base/colors';
 @import 'base/typography';
+
+/* || Import Components styles */
+
+@import 'component/base';
+@import 'component/footer';
+
+/* || Import Layout styles */
+
+@import 'layout/base';
+@import 'layout/grid';
