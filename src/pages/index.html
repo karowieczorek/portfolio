@@ -2,6 +2,16 @@
 
 {% block content %}
 {% include "partials/header.njk" %}
-{% include "partials/contact.njk" %}
+<main id="main">
+    <section id="index__profile">
+        <div class="layout__wrapper grid">
+            <div class="grid__content">
+                <h2 class="section__title">Who I am</h2>
+                <p class="section__content">I'm Karo - an experienced product designer-developer hybrid with a key focus on design systems and accessibility. I spent the past 9 years helping various companies innovate and broadcast their full potential through design. As a Senior Product Designer at Mimi Hearing, I create a world where hearing impairment is no longer a barrier. Based in <span class="italic">echt toll</span> Berlin.</p>
+            </div>       
+        </div>
+    </section>
+    {% include "partials/contact.njk" %}
+</main>
 {% include "partials/footer.njk" %}
 {% endblock %}
