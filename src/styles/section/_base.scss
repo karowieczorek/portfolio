@@ -1,0 +1,71 @@
+/* || Section styles */
+
+section {
+    border-top: 1px solid var(--primary-color);
+    padding-bottom: 8rem;
+
+    @include bp-l {
+        padding-bottom: 16rem;
+    }
+}
+
+.section__title {
+    padding-bottom: 8rem;
+    text-transform: lowercase;
+    font-size: 2.625rem;
+    line-height: 3.5rem;
+    letter-spacing: -0.2;
+
+    @include bp-l {
+        font-size: 3.125rem;
+        line-height: 4rem;
+        letter-spacing: -0.4;
+    }
+
+    @include bp-xxl {
+        font-size: 3.75rem;
+        line-height: 4.875rem;
+        letter-spacing: -0.5;
+    }
+}
+
+.section__content {
+    max-width: 60ch;
+    padding-bottom: 2rem;
+}
+
+.section__cta {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 2rem;
+    padding: 0.4rem 1rem 0.5rem 1rem;
+
+    @include bp-l {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    @include bp-xxl {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+
+    &:hover {
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+    }
+    
+}
+
+section a {
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px hsl(14, 80%, 52%);
+        background-color: var(--secondary-color);
+        border: 1px solid transparent;
+    }
+}
