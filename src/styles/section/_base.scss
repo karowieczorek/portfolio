@@ -58,7 +58,7 @@ section {
         color: var(--secondary-color);
         background-color: var(--primary-color);
     }
-    
+
 }
 
 section a {
@@ -67,5 +67,26 @@ section a {
         box-shadow: 0 0 0 2px hsl(14, 80%, 52%);
         background-color: var(--secondary-color);
         border: 1px solid transparent;
+    }
+}
+
+.section__list__title {
+    padding-bottom: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}
+
+.section__list li {
+    margin: 0 -0.5rem;
+    padding: 1rem 0.5rem 0 0.5rem;
+
+    @include bp-m {
+        margin: 0 -1rem;
+        padding: 1rem 1rem 0 1rem;
     }
 }

@@ -3,7 +3,8 @@
         <link rel="stylesheet" href="assets/styles/styles.css">
     </head>
     
-<header id="header" class="header layout__wrapper grid--header">
+<body>
+    <header id="header" class="header layout__wrapper grid--header">
     <a class="header__skip-link" href="#main">Skip to main content</a>
     <h1 class="header__logo fs--h4"><a href="index.html">Karo Wieczorek</a></h1>
     <nav class="header__navigation__wrapper">
@@ -17,16 +18,40 @@
         </ul>
     </nav>
 </header>
-<main id="main">
-    <section id="contact">
-        <div class="layout__wrapper grid">
-            <div class="grid__content">
-                <h2 class="section__title">Who I am</h2>
-                <p class="section__content">I'm Karo - an experienced product designer-developer hybrid with a key focus on design systems and accessibility. I spent the past 9 years helping various companies innovate and broadcast their full potential through design. As a Senior Product Designer at Mimi Hearing, I create a world where hearing impairment is no longer a barrier. Based in <span class="italic">echt toll</span> Berlin.</p>
-            </div>       
-        </div>
-    </section>
-    <section id="contact">
+    <main id="main">
+        <section id="index__profile">
+            <div class="layout__wrapper grid">
+                <div class="grid__content">
+                    <h2 class="section__title">Who I am</h2>
+                    <p class="section__content">I'm Karo - an experienced product designer-developer hybrid with a key focus on design systems and accessibility. I spent the past 9 years helping various companies innovate and broadcast their full potential through design. As a Senior Product Designer at Mimi Hearing, I create a world where hearing impairment is no longer a barrier. Based in <span class="italic">echt toll</span> Berlin.</p>
+                </div>       
+            </div>
+        </section>
+        <section id="index__portfolio">
+            <div class="layout__wrapper grid">
+                <div class="grid__content">
+                    <h2 class="section__title">What I do</h2>
+                    <p class="section__content">I solve problems with the design. My goal is to bring value and benefits for both: the user and the business. I'm a caretaker of the entire design project throughout its whole life cycle: from identifying, investigating and validating the problem, to prototyping and testing onto overseeing the implementation.</p>
+                    <div class="section__list__wrapper">
+                        <h3 class="section__list__title">Selected work</h3>
+                        <ul class="section__list">
+                            <li class="section__list__item">
+                                    List Item
+                            </li>
+                        </ul>
+                    </div>
+                </div>       
+            </div>
+        </section>
+        <section id="index__articles">
+            <div class="layout__wrapper grid">
+                <div class="grid__content">
+                    <h2 class="section__title">What I write</h2>
+                    <p class="section__content">I write on design, accessibility and lessons learned from my own experience. I collect my thoughts to inspire others and motivate myself never to stop growing.</p>
+                </div>       
+            </div>
+        </section>
+        <section id="contact">
     <div class="layout__wrapper grid">
         <div class="grid__content">
             <h2 class="section__title">Contact</h2>
@@ -35,8 +60,8 @@
         </div>       
     </div>
 </section>
-</main>
-<footer id="footer" class="footer">
+    </main>
+    <footer id="footer" class="footer">
     <div class="layout__wrapper">
         <div class="footer__main__content grid--footer">
             <p class="footer__main__content__note">Thanks for visiting!</p>
@@ -77,5 +102,7 @@
         </div>
     </div>
 </footer>
+    <script src="script.js"></script>
+</body>
 
 </html>

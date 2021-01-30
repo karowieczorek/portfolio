@@ -668,4 +668,29 @@ section a:focus {
   background-color: var(--secondary-color);
   border: 1px solid transparent;
 }
+
+.section__list__title {
+  padding-bottom: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 1441px) {
+  .section__list__title {
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+  }
+}
+
+.section__list li {
+  margin: 0 -0.5rem;
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .section__list li {
+    margin: 0 -1rem;
+    padding: 1rem 1rem 0 1rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
