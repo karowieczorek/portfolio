@@ -1,0 +1,111 @@
+/* || Header styles */
+
+.header {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+
+.header__logo {
+    padding-bottom: 1rem;
+
+    @include bp-m {
+        padding-bottom: 0;
+    }
+}
+
+.header__logo a {
+    color: var(--primary-color);
+    text-decoration: none;
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    &:hover {
+        font-style: italic;
+    }
+
+    &:active {
+        color: var(--primary-color);
+    }
+
+    &:focus {
+        margin-left: -0.5rem;
+        padding: 4px 0.5rem 5px 0.5rem;
+        outline: none;
+        border-radius: 2rem;
+        box-shadow: 0 0 0 2px hsl(14, 80%, 52%);
+        background-color: var(--secondary-color);
+    }
+}
+
+/* || Navigation */
+
+.header__navigation__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__navigation__list a {
+    color: var(--primary-color);
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-left: -0.5rem;
+    padding: 4px 8px 5px 8px;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+
+    &:visited {
+        color: var(--primary-color);
+    }
+
+    &:hover {
+        font-style: italic;
+    }
+
+    &:active {
+        color: var(--primary-color);
+    }
+
+    &:focus {
+        margin-left: -0.5rem;
+        padding: 4px 8px 5px 8px;
+        outline: none;
+        border-radius: 1rem;
+        box-shadow: 0 0 0 2px hsl(14, 80%, 52%);
+        background-color: var(--secondary-color);
+    }
+}
+
+/* || Skip to main content */
+
+.header__skip-link {
+    position: absolute;
+    top: 1rem;
+    left: -9999px;
+}
+
+.header__skip-link:focus {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-80%);
+    outline: none;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 0.5rem 1rem 0.7rem 1rem;
+    background-color: var(--brand-color);
+    box-shadow: 0 0 0 0.25rem hsl(14, 80%, 90%);
+
+    @include bp-m {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
