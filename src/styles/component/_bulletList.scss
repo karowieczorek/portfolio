@@ -1,0 +1,23 @@
+/* || Bullet list styles */
+
+
+.section__bullet-list__title,
+.section__bullet-list li {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}
+
+.section__bullet-list__title {
+    padding-bottom: 2rem;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.section__bullet-list {
+    padding-bottom: 4rem;
+}

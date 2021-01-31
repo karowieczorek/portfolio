@@ -77,10 +77,6 @@
 
 /* || Hover */
 
-.section__list li:hover .compact-card__title a {
-    font-style: italic;
-}
-
 .section__list li:hover .compact-card__content {
     padding-left: 3rem;
     transition: all 0.3ms ease-in-out;

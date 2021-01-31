@@ -1,0 +1,49 @@
+/* || Fact Sheet styles */
+
+.fact-sheet__wrapper {
+    padding-top: 4rem;
+}
+
+.fact-sheet {
+
+    @include bp-m {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        -ms-grid-column: 1fr 1fr;
+        align-items: baseline;
+        grid-column: 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+.fact-sheet__title {
+    padding-bottom: 0.5rem;
+
+    @include bp-m {
+        padding-bottom: 0;
+    }
+}
+
+.fact-sheet__description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* || Fact Sheet List styles */
+
+.fact-sheet__wrapper li {
+    padding-bottom: 1.5rem;
+
+    &:not(:first-of-type) {
+        padding-top: 1rem;
+    }
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid var(--primary-color);
+    }
+}

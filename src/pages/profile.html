@@ -1,0 +1,67 @@
+{% extends "layout.njk" %}
+{% import 'macros/pageTitle.njk' as pageTitle %}
+{% import 'macros/factSheet.njk' as factSheet %}
+
+{% block content %}
+<head>
+    {{pageTitle.pageTitle('Profile - Karo Wieczorek - Senior Product Designer')}}
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    {% include "partials/header.njk" %}
+    <main id="main">
+        <section id="profile__bio">
+            <div class="layout__wrapper grid">
+                <div class="grid__content">
+                    <h2 class="section__title">Profile</h2>
+                    <div class="section__bullet-list__wrapper">
+                        <h3 class="section__bullet-list__title">Long story short</h3>
+                        <ul class="section__bullet-list">
+                            <li>Karo <span class="italic">Karolina</span> Wieczorek,</li>
+                            <li>Designer - developer hybrid,</li>
+                            <li>Senior Product Designer at <a href="https://mimi.io">Mimi Hearing</a>,</li>
+                            <li>9-year experience in Design & UX sector,</li>
+                            <li>Focused on design systems and accessibility,</li>
+                            <li>BASc in Computer Science,</li>
+                            <li>Based in Berlin, Germany.</li>
+                        </ul>
+                    </div>
+                    <p class="section__content">My real value comes from a reliable, hands-on work experience in Design & UX sector, topped with a traditional computer science degree. Alongside empathy and being curious about the world around me are my minor superpowers that drive my work. I put people before pixels and always seek to create products that respect humans. I'm an aesthete at heart with a special treat for typography and minimalism. Combining all above allows me to design human-friendly products that meet business goals and provide everyone with equal opportunities. However, my primary expertise lies in design, I also enjoy tackling with code.</p>
+                    <p class="section__content">I'm known for my strong systems thinking mindset and sheer can-do attitude. I manage and lead design projects from an idea to pixel-perfect, implementation ready specifications.  I efficiently and effectively communicate my concepts, articulating how they solve the problem at hand. I'm an empathetic user advocate who values data to inform design decisions.</p>
+                </div>       
+            </div>
+        </section>
+        <section id="profile__services">
+            <div class="layout__wrapper grid">
+                <div class="grid__content">
+                    <h2 class="section__title">Services</h2>
+                    <p class="section__content">I don't claim I do everything, but I'm skilled to help with projects which scope demands include:</p>
+                    <ul class="fact-sheet__wrapper">
+                        <li>{{factSheet.factSheet('Product Design', "I'm an integral part of the team throughout the entire design process: from a rough strategy, research and ideation, to defining the creative direction and delivering meaningful user experiences to overseeing the implementation. I make sure the visuals, interactions, and brand are all at their best and benefit both the user and the business.")}}</li>
+                        <li>{{factSheet.factSheet('Design Systems', "Developing visual languages and patterns that are more than a pile of reusable UI elements. My work's outcome is structured components library and documentation guide on why and how to use them.")}}</li>
+                        <li>{{factSheet.factSheet('Accessibility / Inclusive Design', "Performing accessibility audits and evaluations for websites and applications under consideration for their alignment with WCAG 2.0 accessibility standards.")}}</li>
+                        <li>{{factSheet.factSheet('User Experience', "Developing research / data-driven journey maps, user flows, and information architectures to validate assumptions, discover edge cases and deliver seamless interaction to an end-user.")}}</li>
+                        <li>{{factSheet.factSheet('User Interfac', "Translating concepts into visually attractive, functional and accessible interfaces while keeping technical / resources limitations in mind.")}}</li>
+                        <li>{{factSheet.factSheet('User Research / Usability Testing', "Discovering users insights / behaviours and addressing their needs in the creation process. I'm involved in qualitative research and later testing its results by running quantitative measures.")}}</li>
+                        <li>{{factSheet.factSheet('Rapid Ideation / Prototyping', "Creating high-fidelity, interactive prototypes for usability testing and documentation purposes.")}}</li>
+                        <li>{{factSheet.factSheet('Frontend Development ', "Following the rule of progressive enhancement, I write semantic HTML and upgrade it with CSS (preferably Sass). When needed, I top it up with a layer of vanilla JavaScript. I am familiar with version control (GitHub / GitLab) and static site generators (11ty).")}}</li>
+                    </ul>
+                </div>       
+            </div>
+        </section>
+        <section id="profile__personally">
+            <div class="layout__wrapper grid">
+                <div class="grid__content">
+                    <h2 class="section__title">After hours</h2>
+                    <p class="section__content">Amongst others, I'm a digital thinker in love with analogue. I believe in the magic of fun and power of a good laugh. I'm vinyl and only good memories collector, coffee drinker, pasta eater and chocolate addict. Reminiscing freedom before pandemic, we could meet during the design meetup or a concert if you like alternative/indie/neofolk music. At the moment, I'm saving the world by staying home (you should try it, too!), reading a lot and taking care of my indoor jungle.</p>
+                </div>       
+            </div>
+        </section>
+        {% include "partials/contact.njk" %}
+    </main>
+    {% include "partials/footer.njk" %}
+    <script src="script.js"></script>
+</body>
+{% endblock %}

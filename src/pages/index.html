@@ -1,7 +1,14 @@
 {% extends "layout.njk" %}
 {% import 'macros/compactCard.njk' as compactCard %}
+{% import 'macros/pageTitle.njk' as pageTitle %}
 
 {% block content %}
+<head>
+    {{pageTitle.pageTitle('Karo Wieczorek - Senior Product Designer')}}
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+</head>
 <body>
     {% include "partials/header.njk" %}
     <main id="main">
