@@ -1,4 +1,5 @@
 {% extends "layout.njk" %}
+{% import 'macros/compactCard.njk' as compactCard %}
 
 {% block content %}
 <body>
@@ -20,9 +21,9 @@
                     <div class="section__list__wrapper">
                         <h3 class="section__list__title">Selected work</h3>
                         <ul class="section__list">
-                            <li class="section__list__item">
-                                    List Item
-                            </li>
+                            <li class="section__list__item">{{compactCard.compactCard('Web Design for AristanderAI', 'https://karowieczorek.com', 'User interface & UX design')}}</li>
+                            <li class="section__list__item">{{compactCard.compactCard('Creative strategy for Wonder', 'https://karowieczorek.com', 'MVP concept & strategy')}}</li>
+                            <li class="section__list__item">{{compactCard.compactCard('Digital guide for The British Museum', 'https://karowieczorek.com', 'User interface & UX design')}}</li>
                         </ul>
                     </div>
                 </div>       
@@ -33,6 +34,14 @@
                 <div class="grid__content">
                     <h2 class="section__title">What I write</h2>
                     <p class="section__content">I write on design, accessibility and lessons learned from my own experience. I collect my thoughts to inspire others and motivate myself never to stop growing.</p>
+                    <div class="section__list__wrapper">
+                        <h3 class="section__list__title">Selected work</h3>
+                        <ul class="section__list">
+                            <li class="section__list__item">{{compactCard.compactCard('Organise the content structure', 'https://karowieczorek.com', 'Accessibility / Frontend')}}</li>
+                            <li class="section__list__item">{{compactCard.compactCard('Include headings for elements', 'https://karowieczorek.com', 'Accessibility / Frontend')}}</li>
+                            <li class="section__list__item">{{compactCard.compactCard('Include headings for elements', 'https://karowieczorek.com', 'Accessibility / Frontend')}}</li>
+                        </ul>
+                    </div>
                 </div>       
             </div>
         </section>

@@ -1,0 +1,114 @@
+/* || Compact Card styles */
+
+.compact-card {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.compact-card__content {
+    
+    @include bp-m {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+    }
+}
+
+.compact-card__title {
+    padding-right: 0.5rem;
+    padding-bottom: 0.25rem;
+
+    @include bp-m {
+        padding-bottom: 0;
+    }
+}
+
+.compact-card__title a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.0625rem;
+    line-height: 1.5rem;
+
+    @include bp-l {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+    }
+
+    @include bp-xxl {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+    }
+}
+
+.compact-card__tag {
+    padding-right: 4rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* || Icon */
+
+.compact-card__icon  {
+    position: absolute;
+    right: 0.5rem;
+    transition: all 0.3ms ease-in-out;
+
+    @include bp-m {
+        right: 1rem;
+    }
+}
+
+.compact-card__icon .circle {
+    stroke: var(--primary-color);
+    fill: var(--secondary-color);
+}
+
+.compact-card__icon .arrow {
+    fill: var(--primary-color);
+}
+
+/* || Hover */
+
+.section__list li:hover .compact-card__title a {
+    font-style: italic;
+}
+
+.section__list li:hover .compact-card__content {
+    padding-left: 3rem;
+    transition: all 0.3ms ease-in-out;
+}
+
+.section__list li:hover .compact-card__icon {
+    left: 0.5rem;
+    transition: all 0.3ms ease-in-out;
+
+    @include bp-m {
+        left: 1rem;
+    }
+}
+
+/* || Focus */
+
+.section__list li a:focus {
+    outline: none;
+}
+
+.section__list li:focus,
+.section__list li:focus-within {
+    border-radius: 1rem;
+    box-shadow: 0 0 0 2px hsl(14, 80%, 52%);
+    z-index: 2;
+}
+
+.section__list li:focus .compact-card,
+.section__list li:focus-within .compact-card {
+    border-bottom: 1px solid transparent;
+}

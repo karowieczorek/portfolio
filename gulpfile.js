@@ -18,4 +18,13 @@ gulp.task('html', function() {
     .pipe(gulp.dest('site/assets/styles/'));
 });
 
-gulp.task('default', gulp.parallel('html', 'styles'));
+gulp.task('js', function() {
+    return gulp.src('src/*.js').pipe(nunjucksRender({
+        ext: ".js",
+    })
+    )
+    .pipe(gulp.dest('site/'));
+});
+
+
+gulp.task('default', gulp.parallel('html', 'styles', 'js'));

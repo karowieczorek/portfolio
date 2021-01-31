@@ -34,7 +34,7 @@ section {
     padding-bottom: 2rem;
 }
 
-.section__cta {
+.section__cta a {
     color: var(--primary-color);
     text-decoration: none;
     font-size: 1.0625rem;
@@ -59,9 +59,6 @@ section {
         background-color: var(--primary-color);
     }
 
-}
-
-section a {
     &:focus {
         outline: none;
         box-shadow: 0 0 0 2px hsl(14, 80%, 52%);
@@ -84,6 +81,7 @@ section a {
 .section__list li {
     margin: 0 -0.5rem;
     padding: 1rem 0.5rem 0 0.5rem;
+    position: relative;
 
     @include bp-m {
         margin: 0 -1rem;
