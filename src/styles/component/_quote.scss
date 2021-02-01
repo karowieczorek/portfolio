@@ -1,0 +1,52 @@
+/* || Quote styles */
+
+.quote__content__wrapper {
+    position: relative;
+}
+
+.quote {
+    padding-top: 4rem;
+}
+
+.quote__icon {
+    position: absolute;
+    left: -2rem;
+    top: 0.5rem;
+
+    @include bp-l {
+        top: 12px;
+    }
+
+    @include bp-xl {
+        top: 1rem;
+    }
+}
+
+.quote__content {
+    max-width: 60ch;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    @include bp-l {
+        font-size: 1.8125rem;
+        line-height: 2.5rem;
+    }
+
+    @include bp-xxl {
+        max-width: 75%;
+        font-size: 2.1875rem;
+        line-height: 3rem;
+        letter-spacing: -0.1;
+    }
+}
+
+.quote__author {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+    @include bp-xxl {
+        font-size: 1.0625rem;
+        line-height: 1.5rem;
+    }
+}

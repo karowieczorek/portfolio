@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const nunjucksRender = require('gulp-nunjucks-render');
 
 gulp.task('html', function() {
-    return gulp.src('src/pages/*').pipe(nunjucksRender({
+    return gulp.src('src/pages/**/*').pipe(nunjucksRender({
         path: ['src/templates'],
     })
     )

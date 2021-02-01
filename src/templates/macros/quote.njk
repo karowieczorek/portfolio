@@ -1,0 +1,9 @@
+{% macro quote(quote, author, authorRole) %}
+    <figure class="quote">
+        <div class="quote__content__wrapper">
+            <svg class="quote__icon" aria-hidden="true" width="16" height="16"><circle cx="724" cy="446" r="8" transform="translate(-716 -438)" fill="#111" fill-rule="evenodd"/></svg>
+            <blockquote class="quote__content"> {{ quote}} </blockquote>
+        </div>
+        <figcaption class="quote__author"> {{ author}}, {{ authorRole }} </span></figcaption>
+    </figure>
+{% endmacro %}
